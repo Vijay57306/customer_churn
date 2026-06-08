@@ -286,7 +286,6 @@ if st.button("🔍 Predict Churn"):
     st.subheader("🎯 Prediction Result")
 
     if prediction[0] == 1:
-
         st.markdown("""
         <div style="
             background-color:#ffebee;
@@ -295,18 +294,14 @@ if st.button("🔍 Predict Churn"):
             text-align:center;
             border:2px solid red;
         ">
-            <h1 style="color:red;">
-                ⚠ Customer Will Churn
-            </h1>
-
-            <h3 style="color:#444;">
-                High chance of leaving the company
-            </h3>
+            <h1 style="color:red;">⚠ Customer Will Churn</h1>
+            <p style="font-size:22px; color:#444; margin:0;">
+                Customer is not loyal to the company
+            </p>
         </div>
         """, unsafe_allow_html=True)
 
     else:
-
         st.markdown("""
         <div style="
             background-color:#e8f5e9;
@@ -315,13 +310,10 @@ if st.button("🔍 Predict Churn"):
             text-align:center;
             border:2px solid green;
         ">
-            <h1 style="color:green;">
-                ✅ Customer Will Stay
-            </h1>
-
-            <h3 style="color:#444;">
+            <h1 style="color:green;">✅ Customer Will Stay</h1>
+            <p style="font-size:22px; color:#444; margin:0;">
                 Customer is loyal to the company
-            </h3>
+            </p>
         </div>
         """, unsafe_allow_html=True)
 
