@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(
     page_title="Customer Churn Prediction",
-    page_icon="📊",
+    page_icon="🤖",
     layout="wide"
 )
 
@@ -60,7 +60,7 @@ model = pickle.load(
 # TITLE
 # =========================
 
-st.title("📊 Customer Churn Prediction System")
+st.title("Customer Churn Prediction System")
 
 st.markdown("""
 ### Predict whether a customer will stay or churn using Machine Learning
@@ -283,7 +283,7 @@ if st.button("🔍 Predict Churn"):
 
     st.markdown("---")
 
-    st.subheader("🎯 Prediction Result")
+    st.subheader(" Prediction Result")
 
     if prediction[0] == 1:
         st.markdown("""
@@ -323,7 +323,7 @@ if st.button("🔍 Predict Churn"):
 
     st.markdown("---")
 
-    st.subheader("📌 Customer Summary")
+    st.subheader(" Customer Summary")
 
     c1, c2, c3 = st.columns(3)
 
@@ -351,7 +351,7 @@ if st.button("🔍 Predict Churn"):
 
     st.markdown("---")
 
-    st.subheader("📈 Customer Insights")
+    st.subheader(" Customer Insights")
 
     chart_data = pd.DataFrame({
         "Features": [
@@ -386,6 +386,6 @@ st.markdown("---")
 
 st.markdown("""
 <center>
-<h4>🚀 Built with Streamlit & Machine Learning</h4>
+<h4> Built with Streamlit & Machine Learning</h4>
 </center>
 """, unsafe_allow_html=True)
